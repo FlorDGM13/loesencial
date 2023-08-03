@@ -1,0 +1,41 @@
+<canvas width="600" height="400">
+
+	</canvas>
+<script>
+	var pantalla = document.querySelector("canvas");
+	var pincel = pantalla.getContext("2d");
+
+    pincel.fillStyle ="lightgrey "; // definir el color
+	pincel.fillRect(0,0,600,400); // funcion
+
+    //RECTANGULO
+
+    pincel.fillStyle ="green"; // definir el color
+	pincel.fillRect(0,0,200,400); // funcion
+
+
+    // RECTANGULO ROJO 
+    pincel.fillStyle ="red"; // definir el color
+	pincel.fillRect(400,0,200,400); // funcion
+
+    //FIGURAS
+    // TRIANGULO
+
+    pincel.fillStyle ="yellow"; // definir el color
+    pincel.beginPath(); //definie una ruta
+    pincel.moveTo(300,200); //cordenadas
+    pincel.lineTo(200,400);
+    pincel.lineTo(400,400);
+    pincel.fill(); //rellenar
+  
+
+  //GRAFICAR CIRFUNFERENCIA
+    
+    pincel.fillStyle ="blue"; // definir el color
+    pincel.beginPath(); //definie una ruta
+    pincel.arc(300,200,50,0,2*3.14); 
+    pincel.fill(); //rellenar
+
+
+
+</script>

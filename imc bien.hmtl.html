@@ -1,0 +1,52 @@
+<meta charset="UFT-8">
+<h1>PROGRAMA</h1>
+
+<script>
+	
+function saltarlinea()
+
+{
+	document.write("<br><br><br>");
+}
+function imprimir(frase)
+{
+	document.write(frase);
+	saltarlinea();
+}
+function calcularimc(peso,altura)
+{
+	return(peso/(altura*altura));
+}
+
+nombre = prompt("INFORME SU NOMBRE");
+pesoinfo= prompt(nombre + ", INFORME SU PESO");
+alturainfo= prompt(nombre + ", INFORME SU ALTURA");
+
+imcalcular= calcularimc(pesoinfo,alturainfo);
+
+imprimir(nombre + ", su IMC calculado es:" + imcalcular);
+
+
+if (imcalcular < 18.5) {
+    imprimir("IMC ABAJO DE LO RECOMENDADO");
+}
+
+if (imcalcular >= 18.5 && imcalcular <=25 ) {
+	imprimir("IMC ESTA DENTRO DE LO NORMAL");
+	
+}
+
+if (imcalcular >=25 && imcalcular<=29) {
+	imprimir("IMS SOBREPESO");
+	
+}
+
+if (imcalcular >= 30) {
+	imprimir("IMC CONSIDERADO COMO OBESIDAD");
+	
+}
+
+
+
+
+</script>
